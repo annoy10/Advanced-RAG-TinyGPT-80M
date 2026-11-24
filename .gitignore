@@ -1,12 +1,9 @@
-﻿# Python
-__pycache__/
+﻿__pycache__/
 *.py[cod]
-*.pyd
 .venv/
 venv/
 env/
 
-# Secrets
 .env
 .env.*
 !.env.example
@@ -14,35 +11,51 @@ secrets/
 *.pem
 *.key
 
-# Model checkpoints
 *.pt
 *.pth
 *.ckpt
 *.safetensors
+*.onnx
 *.bin
 
-# Training outputs
+.cache/
+huggingface_cache/
+models/
+
 runs/
-logs/
 wandb/
 tensorboard/
 outputs/
 checkpoints/
 
-# Vector databases
-chroma_db/
+logs/
+*.log
+
+storage/qdrant/
+storage/bm25/
+storage/cache/
 qdrant_storage/
+chroma_db/
 faiss_index/
 
-# Cache
-.cache/
+data/raw/*
+data/processed/*
+data/metadata/*
+data/evaluation/*
+
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
-# IDE
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
+desktop.ini
+
+build/
+dist/
+*.egg-info/
+*.tmp
+*.bak
