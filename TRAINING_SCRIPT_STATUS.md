@@ -1,0 +1,1 @@
+The uploaded training source was retained unchanged as `transformer/train_model_incomplete_original.py`. It ends at the TinyGPT model section (the supplied file is incomplete), so it is not safe to represent it as a runnable training script. The existing `tinygpt.pt` checkpoint is preserved. RAG ingestion/retrieval does not require retraining this checkpoint.
